@@ -1,106 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interno</title>
-</head>
-<body>
-    <header class="header container">
-        <a class="logo" href="./index.html">Interno</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flexheader">
+        <a class="logo" href="./index.html">
+          <img src="./imgs/logo.svg" alt="" />
+        </a>
         <nav class="nav">
-            <a href="./index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Pages</a>
-            <a href="#">Contact Us</a>
+          <a href="./index.html">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact Us</a>
         </nav>
+      </div>
     </header>
-    <main class="main container">
-        <section class="hero">
-            <h2 class="hero-name">Let's Create Your Dream Interior</h2>
-            <p class="hero-description">The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
-            <a href="#">Get Started</a>
-        </section>
-        <section class="services">
-            <ul class="services-list">
-                <li class="services-item">
-                    <h3>Interior Design</h3>
-                    <p>Enhancing the interior to achieve a healthier environment for the people using right space.</p>
-                    <a href="#">View More</a>
-                </li>
-                <li class="services-item">
-                    <h3>Furniture</h3>
-                    <p>Movable articles that are used to make a room or building suitable for living or working.</p>
-                    <a href="#">View More</a>
-                </li>
-                <li class="services-item">
-                    <h3>Flooring</h3>
-                    <p>Thin object any finished material applied over a floor structure to provide a walking surface.</p>
-                    <a href="#">View More</a>
-                </li>
-            </ul>
-        </section>
-        <section class="contact">
-            <h2>We Tackle The Most Challenging Designs</h2>
-            <p>The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
-            
-            <form action="" class="contactform">
-                <label for="phone">012345678</label>
-                <label for="call">Call Us Anytime</label>
-                <label for=""><button>Get Free Estimate</button></label>
-            </form>
-        </section>
-        <section class="people">
-            <ul class="people-list">
-                <li class="people-item">
-                    <img src="" alt="">
-                    <h3>Lisa Clairton</h3>
-                    <p>New York, USA</p>
-                    <p>We selected Interno interior because of rigorous design background & education.</p>
-                </li>
-                <li class="people-item">
-                    <img src="" alt="">
-                    <h3>David Knight</h3>
-                    <p>Sydney, Australia</p>
-                    <p>The team exceeded our expectations and emerged as leaders of our project’s.</p>
-                </li>
-                <li class="people-item">
-                    <img src="" alt="">
-                    <h3>Lisa Clairton</h3>
-                    <p>Paris, France</p>
-                    <p>They balanced the architectural vision and the project realities beautifully.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="sponsers">
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-        </section>
-        <section class="examples">
-            <ul class="examples-list">
-                <li class="examples-item">
-                    <img src="" alt="">
-                    <h3>Winery Dry Creek Building</h3>
-                    <p>Art Modern</p>
-                </li>
-                <li class="examples-item">
-                    <img src="" alt="">
-                    <h3>Creative Workplace Design</h3>
-                    <p>Minimalist</p>
-                </li>
-                <li class="examples-item">
-                    <img src="" alt="">
-                    <h3>Bedroom Interior Pot Work</h3>
-                    <p>Modern</p>
-                </li>
-                <li class="examples-item">
-                    <img src="" alt="">
-                    <h3>Light Ambience Sepia Design</h3>
-                    <p>Scandinavian</p>
-                </li>
-            </ul>
-        </section>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero-name">Let's Create Your Dream Interior</h2>
+          <p class="hero-description">
+            The world needs innovators and problem solvers who turn challenges
+            into greater opportunities.
+          </p>
+          <div class="btnstart">
+            <a href="#" class="btnstart-link">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <ul class="services-list">
+            <li class="services-item">
+              <h3>Interior Design</h3>
+              <p class="service-text margin1">
+                Enhancing the interior to achieve a healthier environment for
+                the people using right space.
+              </p>
+              <div class="btnservice">
+                <a href="#">View More</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="17"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M2.52625 8.93006L19.8608 8.79321"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.4124 2.40601L21.6519 8.92899L13.2465 15.5834"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li class="services-item">
+              <h3>Furniture</h3>
+              <p class="service-text margin2">
+                Movable articles that are used to make a room or building
+                suitable for living or working.
+              </p>
+              <div class="btnservice">
+                <a href="#">View More</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="17"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M2.52625 8.93006L19.8608 8.79321"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.4124 2.40601L21.6519 8.92899L13.2465 15.5834"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li class="services-item">
+              <h3>Flooring</h3>
+              <p class="service-text margin3">
+                Thin object any finished material applied over a floor structure
+                to provide a walking surface.
+              </p>
+              <div class="btnservice">
+                <a href="#">View More</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="17"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M2.52625 8.93006L19.8608 8.79321"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.4124 2.40601L21.6519 8.92899L13.2465 15.5834"
+                    stroke="#CDA274"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <!-- <h2>We Tackle The Most Challenging Designs</h2>
+          <p>
+            The world needs innovators and problem solvers who turn challenges
+            into greater opportunities. We have an insatiable curiosity about
+            transformative trends challenging the status.
+          </p>
 
+          <form action="" class="contactform">
+            <label for="phone">012345678</label>
+            <label for="call">Call Us Anytime</label>
+            <label for=""><button>Get Free Estimate</button></label>
+          </form> -->
+        </div>
+      </section>
+      <section class="people">
+        <div class="container">
+          <div class="flexpeople">
+            <h2 class="name-section-people">
+              What the People Thinks About Interno
+            </h2>
+            <ul class="people-list">
+              <li class="people-item">
+                <div class="people-flex">
+                  <img src="./imgs/lisaphoto.png" alt="" />
+                  <div class="people-flex-2">
+                    <h3>Lisa Clairton</h3>
+                    <p class="country">New York, USA</p>
+                  </div>
+                </div>
+                <p class="people-text">
+                  We selected Interno interior because of rigorous design
+                  background & education.
+                </p>
+              </li>
+              <li class="people-item">
+                <img src="" alt="" />
+                <h3>David Knight</h3>
+                <p class="country">Sydney, Australia</p>
+                <p class="people-text">
+                  The team exceeded our expectations and emerged as leaders of
+                  our project’s.
+                </p>
+              </li>
+              <li class="people-item">
+                <img src="" alt="" />
+                <h3>Lisa Clairton</h3>
+                <p class="country">Paris, France</p>
+                <p class="people-text">
+                  They balanced the architectural vision and the project
+                  realities beautifully.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sponsers">
+        <div class="container">
+          <img src="./imgs/sponsorss.png" alt="" />
+        </div>
+      </section>
+      <section class="examples">
+        <div class="container">
+          <h1 class="projectname">Recent Projects</h1>
+          <p class="projecttext">
+            With tools to make every part of your process more human and a
+            support team excited to help you, getting started with us never been
+            easier.
+          </p>
+          <div class="projects">
+            <div class="project">
+              <img src="./imgs/img1.png" alt="Winery Dry Creek Building" />
+              <h3>Winery Dry Creek Building</h3>
+              <p>Art Modern</p>
+            </div>
+            <div class="project">
+              <img src="./imgs/img2.png" alt="Creative Workplace Design" />
+              <h3>Creative Workplace Design</h3>
+              <p>Minimalist</p>
+            </div>
+            <div class="project">
+              <img src="./imgs/img3.png" alt="Bedroom Interior Pot Work" />
+              <h3>Bedroom Interior Pot Work</h3>
+              <p>Modern</p>
+            </div>
+            <div class="project">
+              <img src="./imgs/4.png" alt="Light Ambience Sepia Design" />
+              <h3>Light Ambience Sepia Design</h3>
+              <p>Scandinavian</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recent">
+        <div class="container">
+          <ul class="key-metrics">
+            <li class="key-metrics-item">
+              <p class="key-metrics-num">12</p>
+              <p class="key-metrics-text">Years Of Experience</p>
+            </li>
+            <li class="key-metrics-item">
+              <p class="key-metrics-num">5K</p>
+              <p class="key-metrics-text">Success Project</p>
+            </li>
+            <li class="key-metrics-item">
+              <p class="key-metrics-num">1K</p>
+              <p class="key-metrics-text">Active Project</p>
+            </li>
+            <li class="key-metrics-item">
+              <p class="key-metrics-num">4K</p>
+              <p class="key-metrics-text">Happy Customers</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recent-blogs">
+        <div class="container">
+          <h2>Recent Blogs</h2>
+          <h3>Get updates about our latest trends and techniques used in</h3>
+          <h3>interior design project works.</h3>
+          <div class="blog-posts">
+            <article class="blog-post">
+              <img
+                src="./imgs/1.png"
+                alt="Residential Interior Designer In New York, USA"
+              />
+              <div class="blog-info">
+                <span class="category">Kitchen Design</span>
+                <h3>Residential Interior Designer In New York, USA</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+            <article class="blog-post">
+              <img
+                src="./imgs/2.png"
+                alt="How To Choose The Best Wall Art & Decor House?"
+              />
+              <div class="blog-info">
+                <span class="category">Living Room</span>
+                <h3>How To Choose The Best Wall Art & Decor House?</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+            <article class="blog-post">
+              <img
+                src="./imgs/3.png"
+                alt="Tips To Increase The Interior Value Of Your House"
+              />
+              <div class="blog-info">
+                <span class="category">Minimalist Interior</span>
+                <h3>Tips To Increase The Interior Value Of Your House</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+            <article class="blog-post">
+              <img
+                src="./imgs/4.png"
+                alt="Best Solution For Any Office & Business Interior"
+              />
+              <div class="blog-info">
+                <span class="category">Kitchen Design</span>
+                <h3>Best Solution For Any Office & Business Interior</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+            <article class="blog-post">
+              <img
+                src="./imgs/5.png"
+                alt="Get Solution For Building Construction Work"
+              />
+              <div class="blog-info">
+                <span class="category">Living Room</span>
+                <h3>Get Solution For Building Construction Work</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+            <article class="blog-post">
+              <img
+                src="./imgs/6.png"
+                alt="Attain The Best Finish For The Kitchen Cabinets"
+              />
+              <div class="blog-info">
+                <span class="category">Minimalist Interior</span>
+                <h3>Attain The Best Finish For The Kitchen Cabinets</h3>
+                <span class="date">November 23, 2021</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="contact footer">
+        <div class="container">
+          <h2>Wanna join the interno?</h2>
+          <p>Contact Us & Get a Free Consultation</p>
+          <button class="btn">Connect With us →</button>
+        </div>
+      </section> -->
     </main>
-</body>
+
+    <footer>
+      <div class="footer">
+        <h2>Wanna join the interno?</h2>
+        <p>Contact Us & Get a Free Consultation</p>
+        <button class="btn">Connect With us →</button>
+      </div>
+      <div class="footer-container">
+        <div class="footer-column about">
+          <h2 class="footer-logo">Interno</h2>
+          <p>
+            We are the leading architect and interior design firm in the world.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Protected</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">404</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Recent Blog</a></li>
+            <li><a href="#">Pricing Plan</a></li>
+            <li><a href="#">Our Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column contact">
+          <h3>Contact</h3>
+          <p>53, East Birchwood Ave.<br />Brooklyn, New York 11201, USA.</p>
+          <p>contact@interno.com</p>
+          <p>(123) 456 - 7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy; Interno | Designed by
+          <a href="#">Victorflow</a> Templates - Powered by
+          <a href="#">Webflow</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
