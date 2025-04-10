@@ -209,7 +209,17 @@
 
 .people-flex {
   display: flex;
+  width: 360px;
 }
+
+.people-flex{
+  margin-bottom: 25px;
+}
+
+.people-flex img:not(:last-child){
+  margin-right: 20px;
+}
+
 
 .country {
   color: #4d5053;
